@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 // import './Sidebar.css';
 
 const Sidebar = () => {
@@ -20,22 +19,28 @@ const Sidebar = () => {
                       }}
             >
                 <li style={{ margin: '15px 0' }}> 
-                    <Link to="/couriers" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Курьеры</Link>
+                    <a href="/couriers" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Курьеры</a>
                 </li>
                 <li style={{ margin: '15px 0' }}>
-                    <Link to="/clients" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Клиенты</Link>
+                    <a href="/clients" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Клиенты</a>
                 </li>
                 <li style={{ margin: '15px 0' }}>
-                    <Link to="/orders" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Заказы</Link>
+                    <a href="/orders" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Заказы</a>
                 </li>
                 <li style={{ margin: '15px 0' }}>
-                    <Link to="/products" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Товары</Link>
+                    <a href="/order-content" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Содержание Заказов</a>
                 </li>
                 <li style={{ margin: '15px 0' }}>
-                    <Link to="/delivery-routes" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Маршурты</Link>
+                    <a href="/products" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Товары</a>
                 </li>
                 <li style={{ margin: '15px 0' }}>
-                    <Link to="/payments" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Выплаты</Link>
+                    <a href="/delivery-routes" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Маршурты</a>
+                </li>
+                <li style={{ margin: '15px 0' }}>
+                    <a href="/delivery-content" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Составление Маршрутов</a>
+                </li>
+                <li style={{ margin: '15px 0' }}>
+                    <a href="/payments" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Платежи</a>
                 </li>
             </ul>
         </div>
